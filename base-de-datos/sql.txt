@@ -1,0 +1,4 @@
+create table factura (id int, monto float,tipo_pago varchar (15))
+create table usuario (id_usuario int, nombre_usuario varchar (15),contrasena varchar(8),direccion varchar(20))
+create table producto (id_producto int, descripcion varchar (50),proveedor varchar (15))
+create table pedido (producto int, usuario int,cantidad int ,id_factura int,monto float)
