@@ -15,5 +15,18 @@ insert into usuario VALUES(3,"julio",1011,"calle 4 2168");
 insert into usuario VALUES(4,"hernan",1213,"calle 3 8975");
 insert into usuario VALUES(5,"matias",1415,"larrea 2182");
 
+insert into producto VALUES(1,"HAMBURGUESA CON QUESO","MC DONALDS");
+insert into producto VALUES(2,"HAMBURGUESA DE POLLO","MOSTAZA");
+insert into producto VALUES(3,"HAMBURGUESA SOLA","MC DONALDS");
+insert into producto VALUES(4,"HAMBURGUESA COMPLETA","BURGUER KING");
+insert into producto VALUES(5,"HAMBURGUESA CON HUEVO","MOSTAZA");
+
+insert into pedido VALUES (1, 1, 2, 1, 3000)
+insert into pedido VALUES (2, 2, 1, 2, 500)
+insert into pedido VALUES (3, 3, 2, 3, 5000)
+insert into pedido VALUES (4, 4, 2, 4, 7000)
+insert into pedido VALUES (5, 5, 2, 5, 3000)
+
+
 
 
