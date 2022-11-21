@@ -3,11 +3,11 @@ create table usuario (id_usuario int, nombre_usuario varchar (15),contrasena var
 create table producto (id_producto int, descripcion varchar (50),proveedor varchar (15))
 create table pedido (producto int, usuario int,cantidad int ,id_factura int,monto float)
 
-INSERT TO factura VALUES (1, 1500, EFECTIVO);
-INSERT TO factura VALUES (2, 500, EFECTIVO);
-INSERT TO factura VALUES (3, 2500, MERCADOPAGO);
-INSERT TO factura VALUES (4, 3500, MERCADOPAGO);
-INSERT TO factura VALUES (5, 1500, TRANSFERENCIA);
+INSERT INTO factura VALUES (1, 1500," EFECTIVO");
+INSERT INTO factura VALUES (2, 500, "EFECTIVO");
+INSERT INTO factura VALUES (3, 2500, "MERCADOPAGO");
+INSERT INTO factura VALUES (4, 3500, "MERCADOPAGO");
+INSERT INTO factura VALUES (5, 1500, "TRANSFERENCIA");
 
 insert into usuario VALUES(1,"juan",1234,"colombia 1649");
 insert into usuario VALUES(2,"walter",5678,"panama 1884");
@@ -21,12 +21,40 @@ insert into producto VALUES(3,"HAMBURGUESA SOLA","MC DONALDS");
 insert into producto VALUES(4,"HAMBURGUESA COMPLETA","BURGUER KING");
 insert into producto VALUES(5,"HAMBURGUESA CON HUEVO","MOSTAZA");
 
-insert into pedido VALUES (1, 1, 2, 1, 3000)
-insert into pedido VALUES (2, 2, 1, 2, 500)
-insert into pedido VALUES (3, 3, 2, 3, 5000)
-insert into pedido VALUES (4, 4, 2, 4, 7000)
-insert into pedido VALUES (5, 5, 2, 5, 3000)
+insert into pedido VALUES (1, 1, 2, 1, 3000);
+insert into pedido VALUES (2, 2, 1, 2, 500);
+insert into pedido VALUES (3, 3, 2, 3, 5000);
+insert into pedido VALUES (4, 4, 2, 4, 7000);
+insert into pedido VALUES (5, 5, 2, 5, 3000);
 
+"Hacer un select que una los pedidos y los productos de esos pedidos. Visualizar solo las columnas
+de descripción, cantidad y monto"
+SELECT producto, cantidad,monto
+FROM pedido
+
+"Crear una selección de todos los productos que son pagados con efectivo"
+SELECT id
+from factura
+WHERE tipo_pago = "efectivo"
+
+"Seleccionar los usuarios que hayan hecho algún pedido."
+SELECT usuario
+from pedido
+
+ "Seleccionar todas las facturas por un monto mayor a 500"
+SELECT id
+from factura
+WHERE monto >500
+
+"Cambiar todas las facturas que digan aplicación a débito"
+UPDATE factura
+SET tipo_pago = "debito"
+WHERE id = 3
+
+UPDATE factura
+SET tipo_pago = "efectivo"
+WHERE id = 4
+"
 
 
 
