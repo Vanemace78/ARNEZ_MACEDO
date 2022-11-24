@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #757575;
+    background: #e7d319;
+    background-size: cover;
+    border-radius: 24px;
+      
+}
+
+.box{
+    width: 300px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(135, 146, 146, 0.884);
+    text-align: center;
+}
+
+.box h1{
+    color: rgb(22, 3, 3) ;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+.box input[type="text"], input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #e5ebec;
+    padding: 14px 10px;
+    width: 220px;
+    outline: none;
+    color:white;
+    border-radius: 24px;
+    transition: 0.25px;
+}
+
+.box input[type="text"]:focus, input[type="password"]:focus {
+    width: 270px;
+    border-color: #e2121cec;
+}
+
+.box input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #c409092d;
+    padding: 14px 35px;
+    outline: none;
+    color:white;
+    border-radius: 24px;
+    transition: 0.25px;
+    cursor: pointer;
+}
+
+.box input[type="submit"]:hover {
+    background: #c42a3eb2;
+}
+
+.boton {
+    border: 1px solid #d40808; /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: #fa2032; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+    border-radius: 50px; /*bordes redondos*/
+    }
