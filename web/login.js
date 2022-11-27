@@ -9,6 +9,18 @@ if(username=="admin"&& password=="lala")
 }
 else
 {
-    alert("Username or password incorrect");
+    alert("El usuario no existe");
 }
+}
+function finalizar(){
+    alert ("COMPRASTE EL MENU HAMBURGUESA CON QUESO DESEA COMPRAR OTRO")
+}
+function finalizar2(){
+    alert ("COMPRASTE EL MENU HAMBURGUESA CON POLLO DESEA COMPRAR OTRO")
+}
+function finalizar3(){
+    alert ("COMPRASTE EL MENU HAMBURGUESA CON HUEVO DESEA COMPRAR OTRO")
+}
+function finalizar4(){
+    alert ("COMPRASTE EL MENU HAMBURGUESA COMPLETA DESEA COMPRAR OTRO")
 }
