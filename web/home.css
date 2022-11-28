@@ -1,6 +1,11 @@
 body{
     background:url(uno.jpg);
     background-size: 100%;
+    text-align:center;
+
+.centrado{text-align:center;border:1px dotted #000; padding:8px;}
+		div{width:50%;border:1px dotted rgb(0, 255, 136);padding:8px;margin:auto;}
+		center{margin:16px 0;}
 }
 .pedido{
     height: 50vh;
